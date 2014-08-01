@@ -1,0 +1,9 @@
+
+/****Small phones 4" and under****/
+
+@media screen and (max-width:480px){
+	#navigation{
+    position:relative;
+    left: 25px;
+  }
+}

@@ -1,4 +1,49 @@
 *{margin:0; padding: 0;}
+
+ /*Carousel styles */
+  .carousel-inner{
+  	height: 947px;
+  	max-height: 947px;
+  	width:100%;
+  	overflow: hidden;
+  }
+
+  .glass-item{
+  	width: 100%;
+    height: auto;
+  } 
+
+.carousel-inner > .item > img{
+	width:100% !important;
+}
+
+/*************************************************/
+
+.size{
+	max-width:202px;
+	height:233px;
+	margin-left: 20px;
+	margin-bottom: 17px;
+}
+
+ ul.glasses{
+ 	width: 80%;
+ 	margin: 0 auto;
+ }
+/***********Nav ***********************/
+
+.nav.nav-pills{
+	width:225px;
+	margin-left: 15px;
+	margin-right: 20px;
+
+
+
+}
+
+
+
+/*
 .intro{
 	background:url('../images/google-glass-bg.jpg'); 
    -webkit-background-size: cover: 
@@ -6,7 +51,7 @@
    -o-background-size:cover;
    	background-size:cover;
    	height: 1200px;
-}
+} */
 
 .intro.col-xs-12{
    background:url('../images/google-glass-bg-xs.jpg'); 
@@ -29,7 +74,7 @@
 }
 #navigation{margin-top: 22px;}
 #navigation li{width:230px;}
-.glasses li{float: left;display: block; margin-right: 20px; list-style: none;}
+
 .box{
 	border: 1px solid #e5e5e5; 
 	width:202px;
@@ -39,6 +84,7 @@
     -webkit-box-shadow: 1px 0px 0px -1px #ccc;
      box-shadow: 1px 0px 0px -1px #ccc; 
      border-radius: 3px;
+     list-style: none;
 }
 /*#428bca ,  #83c3d4  */
 .box a{text-decoration: none;}
@@ -46,8 +92,37 @@
 	text-align: center;
 	color:rgb(66, 139, 202);
 	font-family: 'Open Sans',sans-serif;
-	font-weight: 300;
+	
+
 }
+
+.box{ height: 233px; position: relative;}
+
 p.price{font-size: 1.4em;padding-top: 2em;padding-left: 5px;color:#63acc2;}
+.clearfix{clear:both;}
 footer{background-color: #999999;margin-top: 20px;height: 50px;padding-top: 15px;}
 .copy{text-align: center;margin-bottom: 0;color: #FFF;}
+
+
+ /****************************/
+
+
+.fa-shopping-cart{
+  display: block;
+  color:#63acc2 !important;
+  font-size: 2em;
+  font-weight: bold;
+  position: absolute;
+  width: 50px;
+  bottom: 0;
+  right: 0px;
+  text-align: center;
+  transition: background-color 0.5s ease;
+}
+
+.fa-shopping-cart:hover{
+   background-color:rgb(66, 139, 202);
+   color: #FFF !important; 
+}
+
+

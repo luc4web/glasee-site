@@ -7,81 +7,156 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 		<!--== CSS Files ==-->
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 		<link href="css/bootstrap.min.css" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="css/styles.css" />
+        <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
 		<!--== Google Fonts ==-->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
 		
 
 	</head>
 	<body>
-	   
-	   <div class="wrapper">
-		 	<div class="intro hidden-xs hidden-sm">    
-			</div><!--end intro section-->
+<div class="wrapper">
+  <div class="intro hidden-xs hidden-sm">  
+	  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators show-md">
+			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+			  </ol>
+
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner">
+			    	<div class="item active glass-item">
+			      		<img src="images/google-glass-bg.jpg" alt="first-pair">      
+				    </div>
+				    <div class="item glass-item">
+				      	<img src="images/glass-2.jpg" alt="second-pair">	     
+				    </div>
+				    <div class="item galss-item">
+				     	<img src="images/glass-3.jpg" alt="third-pair">    
+		      		</div>   
+	  		</div><!--end caousel inner -->  
+	</div><!--end carousel -->
+
+		 	  
+		</div><!--end intro section-->
 		  	<h1 class="slogan">Glasee your trusted wearable technology store</h1>
-        </div>
+
+</div><!--end wrapper -->
+
 		<div class="store-part">
 		  <div class="row">
 		   <nav id="navigation">
-		     <ul class="nav nav-pills nav-stacked col-xs-3">
+		     <ul class="nav nav-pills nav-stacked col-xs-3 col-sm-3">
 				 <li class="active"><a href="#">Explorer Edition</a></li>
 				 <li><a href="#">Pro Edition</a></li>
 				 <li><a href="#">Developer edition</a></li>
 			 </ul>
 		   </nav>
-		   <div class="clearfix visible-xs"></div>
-		 	<div class="products col-xs-9">
-		 		<ul class="glasses ">
-		 		   <li class="box"><a href="#">
-                      <img src="images/products/glass-1.jpg" alt="explorer" />
-                      <h3>Explorer Ed.</h3>    
-		 		 	</a>
-                      <p class="price">$344</p> 
-		 		 	</li>
-
-		 		 	<li class="box"><a href="#">
-		 		 	  <img src="images/products/glass-2.jpg" alt="pro" />
-                      <h3>Pro Ed.</h3>    
-		 		 	</a>
-                       <p class="price">$480</p>
-		 		 	</li>
-
-		 		 	<li class="box"><a href="#">
-		 		 	  <img src="images/products/glass-6.jpg" alt="dev" />	
-		 		 	  <h3>Developer Ed.</h3> 
-		 		 	</a>
-                       <p class="price">$400</p>  
-		 		 	</li>	
-		 		</ul>
-		 		<div class="clearfix"></div>
+		  <!-- <div class="clearfix visible-xs"></div> -->
+		 	<div class="products col-xs-9 col-sm-9">
 		 		<ul class="glasses">
-		 			<li class="box"><a href="#">
-                      <img src="images/products/glass-4.jpg" alt="explorer" />
-                      <h3>Explorer Ed.</h3>    
-		 		 	</a>
-                      <p class="price">$344</p> 
-		 		 	</li>
-                    <li class="box"><a href="#">
-                      <img src="images/products/glass-3.jpg" alt="explorer" />
-                      <h3>Developer Ed.</h3> 
-		 		 	  </a>
-                      <p class="price">$400</p>  
-		 		 	</li>
-		 		 	<li class="box"><a href="#">
-                      <img src="images/products/glass-7.jpg" alt="explorer" />
-                      <h3>Explorer Ed.</h3>    
-		 		 	</a>
-                      <p class="price">$344</p> 
-		 		 	</li>
+		 		<div class="row row-offset">
+		 		 <div class="col-sm-6 col-md-6 col-lg-4 size">
+			 		   <li class="box"><a href="#">
+	                      <img src="images/products/glass-1.jpg" alt="explorer" />
+	                      <h3>Explorer Ed.</h3>    
+			 		 	</a>
+	                      <p class="price">$344</p> 
+	                      <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i></a>
+			 		 	</li>
+
+                   </div>
+                   <div class="col-sm-6 col-md-6 col-lg-4 size">
+			 		 	<li class="box"><a href="#">
+			 		 	  <img src="images/products/glass-2.jpg" alt="pro" />
+	                      <h3>Pro Ed.</h3>    
+			 		 	</a>
+	                       <p class="price">$480</p>
+	                       <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i></a>
+			 		 	</li>
+		 		 	</div>
+                     
+                    <div class="col-sm-6 col-md-6 col-lg-4 size hidden-sm hidden-md"> 
+			 		 	<li class="box"><a href="#">
+			 		 	  <img src="images/products/glass-6.jpg" alt="dev" />	
+			 		 	  <h3>Developer Ed.</h3> 
+			 		 	</a>
+	                       <p class="price">$400</p> 
+	                       <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i></a> 
+			 		 	</li>	
+			 		</div> 	
+                   </div>
+
+
+
+                   <div class="row row-offset">
+
+                  <div class="col-sm-6 col-md-6 col-lg-4 size">
+	                  <li class="box"><a href="#">
+	                      <img src="images/products/glass-4.jpg" alt="explorer" />
+	                      <h3>Explorer Ed.</h3>    
+			 		 	</a>
+	                      <p class="price">$344</p> 
+	                      <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i></a>
+			 		 	</li>
+		 		   </div>
+
+		 		   <div class="col-sm-6 col-md-6 col-lg-4 size">
+	                    <li class="box"><a href="#">
+	                      <img src="images/products/glass-3.jpg" alt="explorer" />
+	                      <h3>Developer Ed.</h3> 
+			 		 	  </a>
+	                      <p class="price">$400</p>  
+	                      <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i></a>
+			 		 	</li>
+		 		 	</div>
+
+		 		 	<div class="col-sm-6 col-md-6 col-lg-4 size hidden-sm hidden-md">
+			 		 	<li class="box"><a href="#">
+	                      <img src="images/products/glass-7.jpg" alt="explorer" />
+	                      <h3>Explorer Ed.</h3>    
+			 		 	</a>
+	                      <p class="price">$344</p> 
+	                      <a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-shopping-cart"></i></a>
+			 		 	</li>
+			 		 </div>	
+                    </div>
+                  </div><!--end row-->  
 		 		</ul>
-		 	</div>
-		 	
-		</div><!--end row-->
-	  </div><!--end store part-->		
+		 	<div class="clearfix"></div> 	
+		</div><!--end products-->
+	<!-- Small modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Buy Google Glass</h4>
+      </div>
+      <div class="modal-body">
+        Buy a pair of Google Glass ?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Add to cart</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 	<footer>
 	   	<p class="copy">&copy; 2014 Glasee </p>
 	</footer>
-          
+     <script type="text/javascript" src="js/jquery.js"></script>
+     <script type="text/javascript" src="js/bootstrap.js"></script> 
+     <script type="text/javascript">
+           $('.carousel').carousel();
+
+     </script>    
 	</body>
 </html>
